@@ -1,0 +1,21 @@
+{
+  "firestore": {
+    "rules": "yes",
+    "indexes": "firestore.indexes.json"
+  },
+  "hosting": {
+    "site": "danielareyesalonso",
+    "public": "dist/danielareyesalonso/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
